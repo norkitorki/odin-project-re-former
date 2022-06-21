@@ -25,3 +25,24 @@
 </form>
 -->
 
+<%= form_tag '/user' do %>
+  <div>
+    <%= label_tag :user_username, 'Username', style: 'display:block;' %>
+    <%= text_field_tag 'user[username]', @user.username %>
+  </div>
+
+  <div>
+    <%= label_tag :user_email, 'Email', style: 'display:block;' %>
+    <%= email_field_tag 'user[email]', @user.email %>
+  </div>
+
+  <div>
+    <%= label_tag :user_password, 'Password', style: 'display:block;' %>
+    <%= password_field_tag 'user[password]', @user.password %>
+  </div>
+
+  <div>
+    <%= submit_tag 'Create User', name: nil %>
+  </div>
+<% end %>
+
