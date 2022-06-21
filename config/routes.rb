@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'users#new'
 
-  resource :user, only: [:new, :edit, :create]
+  resources :users, only: [:new, :edit, :create]
 end
