@@ -1,24 +1,27 @@
 <h1>New User</h1>
 
+<!--
 <form action="/user" accept-charset="UTF-8" method="post">
-  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" autocomplete="off"></input>
+  <input type="hidden" name="authenticity_token" value="<%# form_authenticity_token %>" autocomplete="off"></input>
 
   <div>
     <label for="user_username" style="display:block;">Username</label>
-    <input type="text" id="user_username", name="user[username]" value="<%= @user.username %>">
+    <input type="text" id="user_username", name="user[username]" value="<%# @user.username %>">
   </div>
 
   <div>
     <label for="user_email" style="display:block;">Email</label>
-    <input type="email" id="user_email", name="user[email]" value="<%= @user.email %>">
+    <input type="email" id="user_email", name="user[email]" value="<%# @user.email %>">
   </div>
 
   <div>
     <label for="user_password" style="display:block;">Password</label>
-    <input type="password" id="user_password", name="user[password]" value="<%= @user.password %>">
+    <input type="password" id="user_password", name="user[password]" value="<%# @user.password %>">
   </div>
 
   <div>
     <input type="submit" value="Create User">
   </div>
 </form>
+-->
+
