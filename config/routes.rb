@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'users#new'
 
-  resources :users, only: [:new, :edit, :create]
+  resources :users, except: %i[index show destroy]
 end
