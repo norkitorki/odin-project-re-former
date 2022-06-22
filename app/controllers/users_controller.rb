@@ -3,6 +3,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    @sample_username = "user_#{Time.now.strftime('%M%S')}"
   end
 
   def edit
