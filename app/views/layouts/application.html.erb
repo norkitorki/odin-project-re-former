@@ -11,7 +11,14 @@
   </head>
 
   <body>
-    <p style="font-weight:bold;"><%= notice %></p>
+    <% if alert %>
+      <p style="color:red;font-weight:bold;"><%= alert %></p>
+    <% end %>
+
+    <% if notice %>
+      <p style="color:green;font-weight:bold;"><%= notice %></p>
+    <% end %>
+    
     <%= yield %>
   </body>
 </html>
