@@ -23,7 +23,7 @@ class UsersController < ApplicationController
     if @user.update(user_params)
       redirect_to edit_user_path(@user), notice: 'User has been successfully updated'
     else
-      redirect_to edit_user_path(@user), notice: 'User has not been updated'
+      redirect_to edit_user_path(@user), alert: 'User has not been updated'
     end
   end
 
