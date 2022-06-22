@@ -1,0 +1,36 @@
+body {
+  background-color: #dbdbdb;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+h1 { 
+  font-size: 44px; 
+  font-weight: bold; 
+}
+
+form, form > div {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label { font-size: 22px; }
+
+form input {
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.form-errors {
+  font-size: 22px;
+  font-weight: bold;
+  color: #b40000fd;
+  text-align: center;
+}
+
+.form-errors > li:not(li:last-child) { margin-bottom: 10px; }
