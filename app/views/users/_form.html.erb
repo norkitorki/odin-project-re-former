@@ -1,0 +1,20 @@
+<%= form_with(model: user) do |form| %>
+  <div>
+    <%= form.label :username, 'Your user name here', style: 'display:block;' %>
+    <%= form.text_field :username, value: (user.username || @sample_username) %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: 'display:block;' %>
+    <%= form.email_field :email, placeholder: 'example@example.com' %>
+  </div>
+
+  <div>
+    <%= form.label :password, style: 'display:block;' %>
+    <%= form.password_field :password, value: user.password %>
+  </div>
+
+  <div>
+    <%= form.submit name: nil %>
+  </div>
+<% end %>
